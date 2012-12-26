@@ -1,0 +1,27 @@
+{
+  "name": "RelaxMe",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "The first extension that I made.",
+  "browser_action": {
+    "default_icon": {
+      "128":"images/icon-128.png",
+      "32":"images/icon-32.png",
+      "19":"images/icon-16.png"
+    },
+    "default_popup":"popup.html"
+  },
+  "web_accessible_resources":[
+    "images/icon-64.png"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "http://api.flickr.com/",
+    "notifications",
+     "tabs",
+     "background"
+  ]
+}
